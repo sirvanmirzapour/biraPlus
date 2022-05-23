@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addNumber"
+        android:title="ثبت شماره" />
+    <item
+        android:id="@+id/addContacts"
+        android:title="لیست مخاطبین" />
+
+    <item
+        android:id="@+id/setting"
+        android:title="تنظیمات" />
+    <item
+        android:id="@+id/USSD"
+        android:title="اجرا USSD" />
+    <item
+        android:id="@+id/about"
+        android:title="درباره ما" />
+
+</menu>

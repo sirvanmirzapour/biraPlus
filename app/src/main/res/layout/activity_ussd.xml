@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:layoutDirection="ltr"
+    tools:context=".Activity.ActivityUSSD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtUSSDTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:text=" USSD "
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/txtUSSDParagraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:text="در اینجا می توانید برای سیم کارت روی دستگاه Lten شارژ بفرستید و یا موجودی بگیرید"
+            android:textColor="#8C9EFF" />
+
+
+        <EditText
+            android:id="@+id/edtUSSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableEnd="@drawable/ic_swap_horiz_grey_700_24dp"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="دستور را وارد کنید"
+            android:inputType="phone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cfdialog_default_background_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btnUSSDCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FFA9A7A8"
+                android:text="بی خیال" />
+
+            <Button
+                android:id="@+id/btnUSSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:backgroundTint="#2196F3"
+                android:text="اجرا" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

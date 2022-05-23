@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lten</string>
+    <string name="strActive">روشن</string>
+    <string name="txtDeviceOne">دستگاه یک</string>
+    <string name="strUnActive">خاموش</string>
+    <string name="txtDeviceTwo">دستگاه دو</string>
+    <string name="Call">تماس</string>
+    <string name="txtSituation">وضعیت</string>
+    <string name="btnHistory">تاریخچه</string>
+    <string name="sms_send">پیام ارسال شد</string>
+    <string name="sms_not_send">پیام ارسال نشد</string>
+    <string name="sms_not_send_no_service">سیگنال در دسترس نیست</string>
+    <string name="sms_not_send_no_radio">عدم انتن دهی</string>
+    <string name="sms_deleverd">پیام تحویل داده شد</string>
+    <string name="sms_not_receive">پیام تحویل داده نشد</string>
+    <string name="cannot_send_sms">امکان ارسال پیام نیست</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="btnCall">تماس</string>
+    <string name="btnSituation">وضعیت</string>
+    <string name="alert">توجه</string>
+    <string name="ok">بله</string>
+    <string name="no">خیر</string>
+    <string name="RunUssd">اجرای دستور</string>
+    <string name="Situation">درخواست وضعیت</string>
+    <string name="historyActive">فعال کردن</string>
+    <string name="historyUnactive">غیر فعال</string>
+</resources>

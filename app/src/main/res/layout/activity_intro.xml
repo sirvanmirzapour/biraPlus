@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_intro"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityIntro">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/logo_intro" />
+
+        <TextView
+            android:id="@+id/txtIntro"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="شرکت صنایع الکترونیک لایک"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtIntroTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lten"
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.eyalbira.loadingdots.LoadingDots
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            app:LoadingDots_auto_play="true"
+            app:LoadingDots_dots_color="@android:color/holo_blue_light"
+            app:LoadingDots_dots_count="4"
+            app:LoadingDots_dots_size="9dp"
+            app:LoadingDots_dots_space="3dp"
+            app:LoadingDots_jump_duration="200"
+            app:LoadingDots_jump_height="6dp"
+            app:LoadingDots_loop_duration="800"
+            app:LoadingDots_loop_start_delay="100" />
+        <TextView
+            android:id="@+id/txtIntroVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="version"
+            android:textColor="@color/colorAccent"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</RelativeLayout>

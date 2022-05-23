@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:state_pressed="true"><shape>
+            <solid android:color="#1e8a09" />
+
+            <stroke android:width="2.2999878dip" android:color="#ffa1a7ae" />
+
+            <corners android:radius="10.0dip" />
+        </shape></item> 
+    <item android:state_focused="false" android:state_pressed="true"><shape>
+            <solid android:color="#1e8a09" />
+
+            <stroke android:width="2.2999878dip" android:color="#1e8a09" />
+
+            <corners android:radius="5.0dip" />
+        </shape></item>
+    <item android:state_focused="true" android:state_pressed="false"><shape>
+            <solid android:color="#1e8a09" />
+
+            <stroke android:width="2.2999878dip" android:color="#1e8a09" />
+
+            <corners android:radius="10.0dip" />
+        </shape></item>
+    <item android:state_focused="false" android:state_pressed="false"><shape>
+            <gradient android:angle="270.0" android:centerColor="#1e8a09" android:endColor="#1e8a09" android:startColor="#1e8a09" />
+
+            <stroke android:width="0.70000005dip" android:color="#ffffff" />
+
+            <corners android:radius="5.0dip" />
+        </shape></item>
+    <item android:state_enabled="true"><shape>
+            <padding android:bottom="8.0dip" android:left="8.0dip" android:right="8.0dip" android:top="8.0dip" />
+        </shape></item>
+
+</selector>

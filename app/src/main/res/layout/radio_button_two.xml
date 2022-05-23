@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioFunction"
+        android:checked="@+id/radioOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کاربرد یک" />
+
+        <RadioButton
+            android:id="@+id/radioTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کاربرد دو"/>
+        <RadioButton
+            android:id="@+id/radioThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کاربرد سه"/>
+
+        <RadioButton
+            android:id="@+id/radioFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کاربرد چهار"/>
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".Activity.ActivitySetting">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSetting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Small"
+                android:layout_margin="4dp"
+                android:id="@+id/txtToolBarSetting"
+                android:textColor="#fafafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llEMI"
+        android:layout_below="@+id/appBarSetting">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="#f7f7f7"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:id="@+id/txtPowerOn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دریافت پیامک هنگام وصل شدن برق دستگاه" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llUnActivePowerOn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_red"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtUnActivePowerOn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="خیر"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llActivePowerOn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_blue"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtActivePowerOn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="بله"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:id="@+id/txtPowerOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دریافت پیامک هنگام قطع شدن برق دستگاه" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llUnActivePowerOff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_red"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtUnActivePowerOff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="خیر"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llActivePowerOff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_blue"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtActivePowerOff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="بله"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSmsSituation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_situation"
+                        android:gravity="center_horizontal"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:id="@+id/txtSmsSituation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دريافت وضعیت پیامک ها"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="#f7f7f7"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/txtAlert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" تنظیم نحوه دریافت هشدارها و اعلان ها" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llAlertWithSms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_red"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtAlertWithSms"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="فقط پیامک"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llAlertSituation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_situation"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtAlertSituation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="وضعیت"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llAlertWithSmsAndCall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_blue"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtAlertWithSmsAndCall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="پیامک و تماس"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="#f7f7f7"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/txtDoor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="اطلاع از باز و بسته شدن کرکره برقی" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="6dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/llActiveDoor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_red"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtActiveDoor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="فعال"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llDoorSituation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_situation"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtDoorSituation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="وضعیت"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llUnActiveDoor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginEnd="12dp"
+                                android:layout_marginBottom="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_blue"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="6dp"
+                                android:paddingTop="4dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtUnActiveDoor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="غیر فعال"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#fff" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llEMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_facebook"
+        android:gravity="center_horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/txtEMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="دریافت شماره سریال دستگاه"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</RelativeLayout>
